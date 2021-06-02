@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+
+        <div id="mySidenav" class="sidenav">
+       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+       <a href="howto.html">재활용 방법 설명</a>
+       <a href="bag.html">쓰레기 봉투 설명</a>
+      </div>
+
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+      <div style = "text-align: center; font-size: 200%; font-weight: bold;">
+         <a href = "mainpage.html">홈으로 돌아가기</a>
+     </span>
+     <br>
+     <br>
+     <br>
+     <br>
+     <img src="image/종이.jpg" alt="종이" style="width: 250px; height : auto;">
+     <button onclick="myFunction()">종이류 분리수거</button>
+     <div id="myDIV">
+         이물질은 모두 제거하고 배출한다.
+         <br>
+         종이, 골판지, 신문은 따로 분리해서 배출한다.
+         <br>
+         광고지 같이 코팅된 종이는 일반 쓰레기로 배출한다.
+         <br>
+         스프링, 스테이플러 심 같이 다른 재질은 제거 후 배출한다.
+     </div>
+     <br>
+     <br>
+     <br>
+     <br>
+     <img src="image/종이팩.jpg" alt="종이팩" style="width: 250px; height : auto;">
+     <button onclick="myFunction()">종이팩 분리수거</button>
+     <div id="myDIV">
+         우유팩, 종이컵 등 내용물을 비우고 말려 종이팩 수거함에 따로 배출한다.
+         <br>
+         종이팩 수거함이 없으면 말렸다가 주민센터에 제출하자.
+         <br> 
+         아이스팩은 찢어서 버리지 말고 주민센터에 주면 받아주는 곳이 있다.
+     </div>
+     <br>
+     <br>
+     <br>
+     <br>
+     <img src="image/비닐류.jpg" alt="비닐" style="width: 250px; height : auto;">
+     <button onclick="myFunction()">비닐류 분리수거</button>
+     <div id="myDIV">
+         이물질(특히 음식물) 없이 배출한다.
+         <br>
+         검은색, 청색등 유색 비닐봉지는 분리수거가 불가능하다.
+         <br>
+         마크에 other이라 써져있으면 분리수거 불가능
+    </div>
+     <br>
+     <br>
+     <br>
+     <br>
+     <img src="image/캔류.jpg" alt="캔류" style="width: 250px; height : auto;">
+     <button onclick="myFunction()">캔류 분리수거</button>
+     <div id="myDIV">
+         내용물을 비우고 배출한다.
+         <br> 
+         담배꽁초 넣지말고 일회용 부탄가스 같은건 송곳으로 구멍 뚫어 배출하자.
+     </div>
+     <br>
+     <br>
+     <br>
+     <br>
+     <img src="image/페트.jpg" alt="페트" style="width: 250px; height : auto;">
+     <button onclick="myFunction()">페트류 분리수거</button>
+     <div id="myDIV">
+         other라 적힌건 분리수거 불가능
+         <br>
+         페트병의 라벨을 제거해서 버리자
+         <br>
+         병뚜껑과 재질이 다를 경우에는 모두 분리해서 배출한다.
+    </div>
+     <br>
+     <br>
+     <br>
+     <br>
+     <img src="image/플라스틱.jpg" alt="플라스틱" style="width: 250px; height : auto;">
+     <button onclick="myFunction()">플라스틱류 분리수거</button>
+     <div id="myDIV">
+         other인건 일반 쓰레기로 버리자
+         <br>
+         여러가지 재질이 섞인건 종량제 봉투에 넣어 버리자
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <img src="image/유리.jpg" alt="유리" style="width: 250px; height : auto;">
+    <button onclick="myFunction()">유리류 분리수거</button>
+    <div id="myDIV">
+        내부에 이물질을 넣지말고 말린다음 배출하자
+        <br>
+        맥주병, 소주병은 마트 들고가면 돈으로 바꿔주니 분리수거 말고 마트로 가자.
+        <br>
+        거울, 깨진 유리, 도자기는 매립용 쓰레기 봉투에 버리자. 대형폐기물 스티커를 붙이던가
+   </div>
+
+
+
+
+     <script>
+            function openNav() {
+            document.getElementById("mySidenav").style.display = "block";
+            }
+    
+            function closeNav() {
+              document.getElementById("mySidenav").style.display = "none"
+            }
+            function myFunction() {
+                 var x = document.getElementById("myDIV");
+                 if (x.style.display === "none") {
+                 x.style.display = "block";
+                 } else {
+                 x.style.display = "none";
+                 }
+            }
+     </script>
+       
+    </body>
+</html> 
